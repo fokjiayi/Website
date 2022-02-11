@@ -1,0 +1,205 @@
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="favicons/saturn1.ico" rel="icon" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="visuals/logo7b_FINAL.png">
+    <link rel="icon" sizes="192x192" href="visuals/logo7b_FINAL.png">
+    <title>Jia Yi's website</title>
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:700|Julius+Sans+One|Source+Sans+Pro&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">
+            <img id="logo" src="visuals/logo7b_FINAL.png" alt="My logo" height="50">
+        </a>
+        <div class="container" onclick="hamburgerIcon()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <ul class="navigation title">
+            <li>
+                <a href="index.html#aboutme" onclick="hamburgerIcon()">ABOUT ME</a>
+            </li>
+            <li>
+                <a href="index.html#portfolio" onclick="hamburgerIcon()">PORTFOLIO</a>
+            </li>
+            <li>
+                <a href="index.html#contact" onclick="hamburgerIcon()">CONTACT</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="content">
+        <!-- <h1 class="header">header</h1>
+        <h3 class="title">title</h3>
+        <p class="text">text</p> -->
+        <div id="tilted-black"></div>
+        <div id="tilted-white"></div>
+        <div id="main">
+            <p class="title">Hi, my name is Jia Yi</p>
+            <a class="ca3-scroll-down-link" onclick="smoothScroll(document.getElementById('aboutme'))"
+                style="border:0px">
+                <img src="visuals/arrowdown.png">
+            </a>
+        </div>
+        <div>
+            <h1 class="header"  id="aboutme">About me</h1>
+            <div class="skill-box">
+                <p class="title">What I can do</p>
+                <div class="skills-circle">
+                    <ul>
+                        <li data-percent="85"><span class="text">HTML/CSS3</span><span
+                                class="bar-circle-right"></span><span class="bar-circle-left"></span><span
+                                class="bar-circle-cover"></span><b></b></li>
+                        <li data-percent="60"><span class="text">C#</span><span class="bar-circle-right"></span><span
+                                class="bar-circle-left"></span><span class="bar-circle-cover"></span><b></b></li>
+                        <li data-percent="50"><span class="text">Python</span><span
+                                class="bar-circle-right"></span><span class="bar-circle-left"></span><span
+                                class="bar-circle-cover"></span><b></b></li>
+                        <li data-percent="60"><span class="text">Java</span><span class="bar-circle-right"></span><span
+                                class="bar-circle-left"></span><span class="bar-circle-cover"></span><b></b></li>
+                        <li data-percent="60"><span class="text">SQL</span><span class="bar-circle-right"></span><span
+                                class="bar-circle-left"></span><span class="bar-circle-cover"></span><b></b></li>
+                        <li data-percent="60"><span class="text">VueJS</span><span class="bar-circle-right"></span><span
+                                class="bar-circle-left"></span><span class="bar-circle-cover"></span><b></b></li>
+                        <li data-percent="80"><span class="text">Adobe Premiere Pro</span><span
+                                class="bar-circle-right"></span><span class="bar-circle-left"></span><span
+                                class="bar-circle-cover"></span><b></b></li>
+                        <li data-percent="60"><span class="text">Adobe Photoshop</span><span
+                                class="bar-circle-right"></span><span class="bar-circle-left"></span><span
+                                class="bar-circle-cover"></span><b></b></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="aboutmeOneSection">
+                <p class="title">My Education Background</p>
+                <div>
+                    <span class="school">CHIJ Kellock Primary</span>
+                    <span class="year">2007 to 2012</span>
+                </div>
+                <div>
+                    <span class="school">CHIJ St. Theresa's Convent</span>
+                    <span class="year">2013 to 2016</span>
+                </div>
+                <div>
+                    <span class="school">Singapore Polytechnic - Diploma in Information Technology</span>
+                    <span class="year">2017 to 2020</span>
+                </div>
+            </div>
+            <div class="aboutmeOneSection">
+                <br>
+                <p class="title">My Interests</p>
+                <div>
+                    <span class="interestIcon"><img id="logo" src="visuals/web.png" alt="My logo" height="50"></span>
+                    <span class="interestHeader">Web Development</span>
+                    <span class="interest">I enjoy developing websites as it incorporates elements of coding and
+                        design.</span>
+                </div>
+                <div>
+                    <span class="interestIcon"><img id="logo" src="visuals/premiere.png" alt="My logo"
+                            height="50"></span>
+                    <span class="interestHeader">Video Editing</span>
+                    <span class="interest">I enjoy editing as I find it fun to have footages to play around with to make
+                        an interesting video.</span>
+                </div>
+                <div>
+                    <span class="interestIcon"><img id="logo" src="visuals/jersey.png" alt="My logo" height="50"></span>
+                    <span class="interestHeader">Sports</span>
+                    <span class="interest">Playing sports, keep my competitiveness up as well as helping me relief
+                        stress.</span>
+                </div>
+                <!-- <div>
+                    <span class="interestIcon"><img id="logo" src="visuals/movies.png" alt="My logo" height="50"></span>
+                    <span class="interestHeader">Watching movies</span>
+                    <span class="interest">desc</span>
+                </div> -->
+                <div>
+                    <span class="interestIcon"><img id="logo" src="visuals/game-controller.png" alt="My logo"
+                            height="50"></span>
+                    <span class="interestHeader">Gaming</span>
+                    <span class="interest">I enjoy playing games such as PUBG and Call Of Duty to relief stress as
+                        well.</span>
+                </div>
+
+            </div>
+
+        </div>
+        <div >
+            <h1 class="header" id="portfolio">Portfolio</h1>
+            <p class="title">Videos I Edited</p>
+            <div>
+                <span class="videosTitle">CHIJSTC 80th Anniversary: Our Theresian Story (2013)</span>
+                <iframe width="100%" src="https://www.youtube.com/embed/qAOdDiEvRjo" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </iframe>
+                <span class="videosDesc">This video was made to commerate my secondary school's 80th anniversary. I took
+                    part in the production of
+                    this video under my cca, Infocomm Club, as a cartoon artist.</span>
+            </div>
+            <div>
+                <span class="videosTitle">Choices (2015)</span>
+                <iframe width="100%" src="https://www.youtube.com/embed/_sqzaPNOhVQ" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </iframe>
+                <span class="videosDesc">This video was made for a video competition by National Climate Change
+                    Secretariat (NCCS). This video aims
+                    to encourage the audience that small actions like littering and wasting water will untimately affect
+                    mankind.</span>
+            </div>
+            <div>
+                <span class="videosTitle">Arts Fiesta Jazz Band Performance Highlight Video (2017)</span>
+                <iframe width="100%" src="https://www.youtube.com/embed/dy_U3ZoHOKs" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </iframe>
+                <span class="videosDesc">This is a highlights video made for SP Jazz Band's performance during Arts
+                    Fiesta 2017.</span>
+            </div>
+            <div>
+                <span class="videosTitle">Flag Day Highlight video (2018)</span>
+                <iframe width="100%" src="https://www.youtube.com/embed/o3a2psJNoVQ" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </iframe>
+                <span class="videosDesc">This is a highlights video made for the the schools annual Flag Day.</span>
+            </div>
+            <div>
+                <span class="videosTitle">Regrets (2018)</span>
+                <iframe width="100%" src="https://www.youtube.com/embed/H5RdUQg9rsM" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </iframe>
+                <span class="videosDesc">This was a short film done by me and three other CCA committee members for the
+                    Youths of Tommorrow Competiton organised by Health Promotion Board. We managed to clinch second
+                    place for this competition. </span>
+            </div>
+            <div>
+                <span class="videosTitle">Poly Forum Closing Ceremony Video (2019)</span>
+                <iframe width="100%" src="https://www.youtube.com/embed/lLXlIiAol-s" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </iframe>
+                <span class="videosDesc">This video was made for the Poly Forum 2019 Closing Ceremoy, highlighting
+                    activities and learning points from the 6 day event. </span>
+            </div>
+        </div>
+        <div id="contact">
+            <h1 class="header">Contact me</h1>
+        </div>
+    </div>
+
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
