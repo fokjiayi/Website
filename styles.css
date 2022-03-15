@@ -30,8 +30,14 @@ body{
 
 }
 
+.icons {
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
 .content{
-    margin: 6em 3em 0!important;
+    margin: 6em 2.5em 0!important;
     /* position: relative; */
 }
 
@@ -132,6 +138,14 @@ body{
       border-radius:3px;
       -moz-border-radius:3px;
       -webkit-border-radius:3px;
+      /* height: 100%;
+        display: block;
+        width: 0;
+        color: rgb(255, 251, 251);
+        line-height: 30px;
+        position: absolute;
+        text-align: end;
+        padding-right: 5px; */
   }
   
   .skill-bar-percent {
@@ -144,3 +158,12 @@ body{
       color:#ffffff;
       color:rgba(0, 0, 0, 0.4);
   }
+
+  @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}

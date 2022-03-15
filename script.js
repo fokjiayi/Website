@@ -17,36 +17,39 @@ function storeCurrTab(tabname){
   localStorage.setItem("currTab", tabname);
 }
 
+/*Portfolio skills bar jquery*/
+var offsetTop = $('#v-pills-aboutme').offset().top;
+$(window).scroll(function() {
+  var height = $(window).height();
+  if($(window).scrollTop()+height > offsetTop) {
+    jQuery('.skillbar').each(function(){
+      jQuery(this).find('.skillbar-bar').animate({
+        width:jQuery(this).attr('data-percent')
+      },2000);
+    });
+  }
+});
+
 var curr = localStorage.getItem("currTab");
 console.log("current tab:", curr)
 // var triggerEl = document.querySelector('#v-pills-tab button[data-bs-target="#v-pills-'+curr+'"]');
 // var tabTrigger = new bootstrap.Tab(triggerEl)
 // tabTrigger.show() // Select tab by name
 var someTabTriggerEl = document.querySelector('#v-pills-tab button[data-bs-target="#v-pills-'+curr+'"]')
-var tab = new bootstrap.Tab(someTabTriggerEl)
+// var tab = new bootstrap.Tab(someTabTriggerEl)
+bootstrap.Tab.getInstance(someTabTriggerEl).show()
+// tab.show()
 
-tab.show()
 
 
 
-/*Portfolio skills bar jquery*/
-var offsetTop = $('#v-pills-aboutme').offset().top;
-$(window).scroll(function() {
-var height = $(window).height();
-if($(window).scrollTop()+height > offsetTop) {
-  jQuery('.skillbar').each(function(){
-    jQuery(this).find('.skillbar-bar').animate({
-      width:jQuery(this).attr('data-percent')
-    },2000);
-  });
-}
-});
+
 // $(document).ready(function () {
-//     $('.skillbar').each(function () {
-//         $(this).find('.skillbar-bar').animate({
-//             width: $(this).attr('data-percent')
-//         }, 4000);
-//     });
+//   $('.skillbar').each(function () {
+//       $(this).find('.skillbar-bar').animate({
+//           width: $(this).attr('data-percent')
+//       }, 4000);
+//   });
 // });
 
 // window.smoothScroll = function(target) {
